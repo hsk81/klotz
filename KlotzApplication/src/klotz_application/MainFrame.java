@@ -46,6 +46,11 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         jump_button.setText("JUMP");
+        jump_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jump_buttonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,6 +75,10 @@ public class MainFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jump_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jump_buttonActionPerformed
+        ((MainPanel) this.main_panel).jump();
+    }//GEN-LAST:event_jump_buttonActionPerformed
 
     /**
      * @param args the command line arguments

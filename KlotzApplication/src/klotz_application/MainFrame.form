@@ -73,6 +73,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="JUMP"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jump_buttonActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
